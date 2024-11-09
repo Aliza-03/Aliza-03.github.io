@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-content">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I’m Aliza, a web developer passionate about creating beautiful and functional websites.</p>
+        <h2>Aliza Ibrahim</h2>
+        <p>Welcome to my portfolio</p>
         <a href="#portfolio" className="hero-button">View My Work</a>
       </div>
     </section>

@@ -1,27 +1,36 @@
 import React, { useState } from 'react';
 import '../styles/Portfolio.css';
+import KMeansClustering from '../assets/KMeansClusterpng.png';
+import KMeansConfusion from '../assets/KMeansConfusion.png';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A web app that does XYZ.',
-    link: '#',
-    images: ['image1.jpg', 'image2.jpg'],
-    details: 'This is a detailed description of Project One.',
+    title: 'KMeans Clustering for Movie Review',
+    description: 'Applied KMeans from scratch for IMDB review dataset',
+    link: 'https://github.com/Aliza-03/IMDB_Movie_Review_KMeansClustering',
+    images: [KMeansClustering],
+    details: 'Dataset from Kaggle',
   },
   {
-    title: 'Project Two',
-    description: 'A mobile app that helps with ABC.',
-    link: '#',
+    title: 'Global prosperity Rankings Analysis',
+    description: 'Dataset from Kaggle',
+    link: 'https://github.com/Aliza-03/Global-Prosperity-Ranking---Visualisation',
     images: ['image1.jpg'],
-    details: 'This is a detailed description of Project Two.',
+    details: 'This project analyzes and classifies countries based on their "Average Score" and investigates the relationship between "Average Score" and "Safety and Security." In the first visualization, countries are classified into categories based on their average score, providing a general view of how many countries fall in each class. The second visualization showcases the correlation between a countrys average score and its safety and security levels. This allows us to observe how safety and security vary in relation to prosperity and well-being, providing deeper insights into the relationship between these two factors.',
   },
   {
-    title: 'Project Three',
-    description: 'A data visualization project for DEF.',
-    link: '#',
+    title: 'Encrypted Chat System with Key Exchange',
+    description: 'Uses Diffie Hellman Key exchange and AES encryption',
+    link: 'https://github.com/Aliza-03/Encrypted-Chat-System-',
     images: ['image1.jpg', 'image2.jpg'],
-    details: 'This is a detailed description of Project Three.',
+    details: 'Using AES and Diffie Helman key exchange, a client and server chat system has been created with registration and login functionality.',
+  },
+  {
+    title: 'AlmonaTech Society Management System',
+    description: 'Development project using ASP.NET',
+    link: 'https://github.com/nbh-rjn/AlmonaTech-Society-Managment',
+    images: ['image1.jpg', 'image2.jpg'],
+    details: 'Created a desktop application to manage societies within university.Used ASP.NET',
   },
   // Add more projects as needed
 ];
@@ -59,6 +68,14 @@ const Portfolio = () => {
           <div className="popup-content">
             <span className="close" onClick={closePopup}>&times;</span>
             <h3>{popupContent.title}</h3>
+             {/* Display project link if it exists */}
+            {popupContent.link && (
+              <p>
+                <a href={popupContent.link} target="_blank" rel="noopener noreferrer">
+                  View Project
+                </a>
+              </p>
+            )}
             <p>{popupContent.details}</p>
             <div>
               {popupContent.images.map((image, index) => (

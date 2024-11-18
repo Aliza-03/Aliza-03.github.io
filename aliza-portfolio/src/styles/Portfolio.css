@@ -35,7 +35,7 @@
 
 /* View Project Button */
 .view-project-btn {
-  background-color: #007bff;
+  background-color:black;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -45,7 +45,7 @@
 }
 
 .view-project-btn:hover {
-  background-color: #0056b3;
+  background-color: grey;
 }
 
 /* Popup Styles */
@@ -67,9 +67,10 @@
   padding: 30px;
   border-radius: 10px;
   width: 80%;
-  max-width: 600px;
+  max-width: 700px;
   overflow-y: auto;
   position: relative;
+  
 }
 
 .popup .close {
@@ -82,7 +83,7 @@
 
 /* Close Popup Button */
 .close-popup button {
-  background-color: #007bff;
+  background-color:black;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -93,7 +94,7 @@
 }
 
 .close-popup button:hover {
-  background-color: #0056b3;
+  background-color: grey;
 }
 
 .popup img {

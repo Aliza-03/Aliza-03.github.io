@@ -3,11 +3,16 @@ import React from 'react';
 import '../styles/Skills.css';
 
 const skills = [
-  { name: 'HTML', level: 'Advanced' },
-  { name: 'CSS', level: 'Advanced' },
-  { name: 'JavaScript', level: 'Intermediate' },
-  { name: 'React', level: 'Intermediate' },
-  { name: 'Node.js', level: 'Beginner' },
+  { name: 'Python' },
+  { name: 'React-Native' },
+  { name: 'JavaScript' },
+  { name: 'React' },
+  { name: 'Node.js' },
+  { name: 'MongoDB' },
+  { name: 'Docker' },
+  { name: 'SQL' },
+  {name:'Tensorflow'},
+  { name: 'Sci-kit Learn'},
   // Add more skills as needed
 ];
 
@@ -19,7 +24,6 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div key={index} className="skill-item">
             <h3>{skill.name}</h3>
-            <p>{skill.level}</p>
           </div>
         ))}
       </div>

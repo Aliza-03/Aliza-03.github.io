@@ -7,8 +7,12 @@ const About = () => {
     <section className="about" id="about">
       <h2>About Me</h2>
       <p>
-        Hello! I’m Aliza, a web developer passionate about creating interactive and visually appealing web applications.
-        I have experience in HTML, CSS, JavaScript, and React, and I’m always eager to learn new technologies and improve my skills.
+      Hi! I'm Aliza, a developer and aspiring data scientist with a passion for creating 
+      visually compelling and user-friendly apps and websites. Proficient in tools like React and React Native,
+       </p>
+      <p>
+      I enjoy merging design and development to bring ideas to life. I’m especially drawn to data analytics,
+      using Python to transform complex data into interactive, easy-to-understand dashboards and visuals
       </p>
     </section>
   );
